@@ -19,6 +19,7 @@
 		8DB834132C4966F500A55C91 /* AfazeresAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DB834112C4966F500A55C91 /* AfazeresAppModel.xcdatamodeld */; };
 		8DB834162C49672A00A55C91 /* Task+Estension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB834152C49672A00A55C91 /* Task+Estension.swift */; };
 		8DB834192C49674C00A55C91 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB834182C49674C00A55C91 /* CoreDataManager.swift */; };
+		8DB8341C2C49726D00A55C91 /* Springboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8341B2C49726D00A55C91 /* Springboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		8DB834122C4966F500A55C91 /* TodoAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoAppModel.xcdatamodel; sourceTree = "<group>"; };
 		8DB834152C49672A00A55C91 /* Task+Estension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Estension.swift"; sourceTree = "<group>"; };
 		8DB834182C49674C00A55C91 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8DB8341B2C49726D00A55C91 /* Springboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Springboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		8DB833FD2C4965E400A55C91 /* AfazeresUITests */ = {
 			isa = PBXGroup;
 			children = (
+				8DB8341A2C49725800A55C91 /* Utils */,
 				8DB833FE2C4965E400A55C91 /* AfazeresUITests.swift */,
 				8DB834002C4965E400A55C91 /* AfazeresUITestsLaunchTests.swift */,
 			);
@@ -172,6 +175,14 @@
 				8DB834182C49674C00A55C91 /* CoreDataManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		8DB8341A2C49725800A55C91 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8DB8341B2C49726D00A55C91 /* Springboard.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +339,7 @@
 			files = (
 				8DB834012C4965E400A55C91 /* AfazeresUITestsLaunchTests.swift in Sources */,
 				8DB833FF2C4965E400A55C91 /* AfazeresUITests.swift in Sources */,
+				8DB8341C2C49726D00A55C91 /* Springboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
