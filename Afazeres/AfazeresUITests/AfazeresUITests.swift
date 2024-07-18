@@ -64,3 +64,33 @@ class when_user_saves_a_new_task: XCTestCase {
     }
     
 }
+
+class when_user_deletes_a_new_task: XCTestCase {
+    
+    private var app: XCUIApplication!
+    
+    override func setUp() {
+        app = XCUIApplication()
+        continueAfterFailure = false
+        app.launch()
+        
+        let titleTextField = app.textFields["titleTextField"]
+        titleTextField.tap()
+        titleTextField.typeText("Mow the lawn")
+        
+        let saveTaskButton = app.buttons["saveTaskButton"]
+        saveTaskButton.tap()
+    }
+    
+    func test_should_delete_task_successfully() {
+        let cell = app.tables["taskList"].cells["Mow the lawn, Medium"]
+        cell.swipeLeft()
+        app.tables["taskList"].buttons["Delete"].tap()
+        XCTAssertFalse(cell.exists)
+    }
+    
+    override func tearDown() {
+        Springboard.deleteApp()
+    }
+    
+}
